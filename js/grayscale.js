@@ -44,15 +44,21 @@
 
   $('#submit-form').on('click', function(e) {
     e.preventDefault();
-    var jqxhr = $.ajax({
-      url: url,
-      method: "GET",
-      dataType: "json",
-      data: $form.serializeObject(),
-      success: function(blah) {
-        $('#inputEmail').val("")
-        $('#submit-form').text("Success!")
-      }
-  })
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    if(regex.test($('#inputEmail').val())){
+      var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject(),
+        success: function(blah) {
+          $('#inputEmail').val("")
+          $('#submit-form').text("Success!")
+        }
+    })
+  } else {
+        $('#inputEmail').val("Invalid Email Address!")
+  }
+
 })
 })(jQuery); // End of use strict
