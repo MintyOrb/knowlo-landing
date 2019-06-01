@@ -39,6 +39,7 @@
 
 @media (min-width: 992px) {
   #mainNav {
+    height: 70px;
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
