@@ -5,9 +5,8 @@
  */
 
 #mainNav {
-  min-height: 56px;
+  min-height: 70px;
   background-color: #fff;
-  height: 70px;
 }
 
 #mainNav .navbar-toggler {
