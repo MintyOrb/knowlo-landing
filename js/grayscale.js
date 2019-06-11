@@ -39,6 +39,7 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  // sign-up form (via google sheets: https://medium.com/@dmccoy/how-to-submit-an-html-form-to-google-sheets-without-google-forms-b833952cc175 )
   var $form = $('form#test-form'),
       url = 'https://script.google.com/macros/s/AKfycbwELmKfmwxS76U1SzF31SQJzvKAo0KNf6om_VxT-3utnBlYfDGP/exec'
 
@@ -55,10 +56,10 @@
           $('#inputEmail').val("")
           $('#submit-form').text("Success!")
         }
-    })
-  } else {
-        $('#inputEmail').val("Invalid Email Address!")
-  }
+      })
+    } else {
+          $('#inputEmail').val("Invalid Email Address!")
+    }
+  })
 
-})
 })(jQuery); // End of use strict
