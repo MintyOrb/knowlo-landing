@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-50613674-6"></script>
   <script>
@@ -39,13 +39,19 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Knowlo</a>
+      <div>
+        <img class='owl-icon-sm' src="/img/knowlo-owl-bold.png">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Knowlo</a>
+      </div>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          <!-- <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#curriculum">Curriculum</a>
           </li>
@@ -67,6 +73,7 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
+        <img class='owl-icon' src="/img/knowlo-owl-bold.png">
         <h1 class="mx-auto my-0 ">Knowlo</h1>
         <h2 class="mx-auto mt-2 mb-5">For the proliferation of knowledge.</h2>
         <!-- <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a> -->
@@ -74,21 +81,26 @@
     </div>
   </header>
 
+  <!-- about Section -->
+  <!-- <section id="about" class="projects-section bg-light">
+    <div class="container">yo
+    </div>
+  </section> -->
 
   <!-- Curriculum Section -->
-  <section id="curriculum" class="projects-section bg-light">
+  <section  class="projects-section bg-light">
     <div class="container">
 
-      <div class="container">
+      <div id="curriculum"class="container">
         <div class="row" style="margin-bottom: 100px;">
           <div class="col-lg-8 mx-auto">
             <h1 class="text-center mb-4">Universal Literacy</h1>
-            <h5 class="text-center mb-4 text-black-50">Context for the Sciences</h5>
-            <p class="text-center text-black-50">Seeing the big picture relationships between major scientific disicplines and milestone events throughout the history of the universe makes it easier to dive into the details.</p>
-            <p class="text-center text-black-50 mb-0">You may have to be a genius to come up with the theory of relativity, but you don't have to be a genius to understand it. <span class='primary-theme'>Universal Literacy</span> aims to make humanities most astounding insights across Time and Size comprehensible to people of all ages by providing large-scale frameworks for thinking about science, technology, and the universe.</p>
+            <h5 class="text-center mb-4 text-black-50">Internalizing the universe</h5>
+            <!-- <p class="text-center text-black-50">Universal Literacy is about understanding <span class='primary-theme'>humanities greatest insights</span> through studying the structures across the <span class='primary-theme'>size scale</span> and milestone events throughout the <span class='primary-theme'>time scale</span> of the entire universe.</p> -->
+            <p class="text-center text-black-50 mb-0">It may take a genius to develop the theory of relativity, but you don't have to be a genius to understand it. <span class='primary-theme'>Universal Literacy</span> aims to make humanities most astounding insights across <span class='primary-theme'>Time</span> and <span class='primary-theme'>Size</span> comprehensible to people of all ages by providing large-scale frameworks for thinking about science, technology, and the universe.</p>
           </div>
         </div>
-      </div>
+
 
       <!-- size and time -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
@@ -97,8 +109,9 @@
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text-right text-center text-lg-left">
-            <h4>Size Scale</h4>
-            <p class="text-black-50 mb-0">Internalizing and vizualizing the types of physical structures that exist across the entire size scale of the universe lays the foundation for understanding the theories and concepts that exist around them.</p>
+            <h4 class='bold'>Size Scale</h4>
+            <p class="mb-0 bold">Every structure in the universe exists at a specific size.</p>
+            <p class="text-black-50 mb-0">Understanding how these structures embody one another enables us to see our relationship to the universe in a new light.</p>
           </div>
         </div>
       </div>
@@ -108,15 +121,16 @@
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text-left text-center text-lg-right">
-            <h4>Time Scale</h4>
-            <p class="text-black-50 mb-0">Imagining and understanding how structures emerge throughout the history of the universe leads to insights about how energy flows and where everything will likely end up.</p>
+            <h4 class='bold'>Time Scale</h4>
+            <p class='mb-0 bold'>The history of the entire universe can be broken down into six steps.</p>
+            <p class="text-black-50 mb-0">Visualizing the flows of energy and structure throughout the last 13.8 billion years provides remarkable insight into how we got here an where we're likely going.</p>
           </div>
         </div>
         <div class="col-xl-8 col-lg-7 d-none d-lg-block">
           <img class="img-fluid mb-3 mb-lg-0" src="img/time-simp.PNG" alt="">
         </div>
       </div>
-
+    </div>
       <!-- Project One Row -->
       <div id="library" class="row justify-content-center no-gutters mb-5 mb-lg-0">
         <div class="col-lg-6">
@@ -126,15 +140,17 @@
             </a>
         </div>
         <div class="col-lg-6">
-          <div class="bg-black text-center h-100 project">
-            <div class="d-flex h-100">
-              <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Knowlo Library</h4>
-                <p class="mb-0 text-white-50">An explorable collection of the most illuminating science teaching resources. Videos, images, and insights across all disicplines.</p>
-                <hr class="d-none d-lg-block mb-0 ml-0">
+          <a href="https://knowlo.io" target="_blank">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">Knowlo Library</h4>
+                  <p class="mb-0 text-white-50">An explorable collection of the most illuminating science teaching resources. Videos, images, and insights across all disicplines.</p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="pad">
           <a href="https://knowlo.io" target="_blank"><button class='center-block btn btn-primary'>explore the library now</button></a>

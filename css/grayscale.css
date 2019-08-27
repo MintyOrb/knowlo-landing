@@ -4,6 +4,20 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+.owl-icon {
+  height: 150px;
+  filter: invert(1);
+  margin-bottom: -15px;
+  margin-top: -55px;
+}
+.owl-icon-sm {
+  height: 50px;
+  margin-top: -10px;
+  filter: invert(0);
+}
+.bold {
+  font-weight: bold;
+}
 #mainNav {
   min-height: 70px;
   background-color: #fff;
@@ -51,6 +65,9 @@
     padding: .5rem 0;
     color: rgba(255, 255, 255, 0.8);
   }
+  #mainNav .owl-icon-sm {
+    filter: invert(1)
+  }
   #mainNav .nav-link {
     -webkit-transition: none;
     transition: none;
@@ -68,6 +85,9 @@
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #161616;
+  }
+  #mainNav.navbar-shrink .owl-icon-sm {
+    filter: invert(0)
   }
   #mainNav.navbar-shrink .nav-link {
     color: #161616;
@@ -191,7 +211,7 @@
 
 .projects-section {
   background-color: white!important;
-  padding: 10rem 0;
+  padding-top: 10rem;
 }
 
 .projects-section .featured-text-right {
